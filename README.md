@@ -51,9 +51,9 @@ Sample policy json for s3 bucket.
 
 replace my-s3-bucket in ```.ebextensions/wp.config``` with your bucket name.
 
-### Note:
-- This is a single site setup. for multisite 👉: http://codex.wordpress.org/Create_A_Network
-- We would reccommend using Mysql. 👉 https://codex.wordpress.org/Using_Alternative_Databases
+### Notes:
+- This is a single site setup. For multisite here's the things to know before 👉: http://codex.wordpress.org/Create_A_Network
+- We recommend using Mysql. Here's why 👉 https://codex.wordpress.org/Using_Alternative_Databases
 
 
 
