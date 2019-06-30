@@ -6,12 +6,8 @@
     },
     "Volumes": [
       {
-        "HostDirectory": "/var/www/html/wp-content/themes/",
-        "ContainerDirectory": "/var/www/html/wp-content/themes/"
-      },
-      {
-        "HostDirectory": "/var/www/html/wp-content/plugins/",
-        "ContainerDirectory": "/var/www/html/wp-content/plugins/"
+        "HostDirectory": "/var/www/html/wp-content/",
+        "ContainerDirectory": "/var/www/html/wp-content/"
       }
     ],
     "Ports": [
