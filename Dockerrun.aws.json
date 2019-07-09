@@ -1,18 +1,22 @@
 {
-    "AWSEBDockerrunVersion": "1",
-    "Image": {
-      "Name": "wordpress",
-      "Update": "true"
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "wordpress",
+    "Update": "true"
+  },
+  "Volumes": [
+    {
+      "HostDirectory": "/var/www/html/wp-content/",
+      "ContainerDirectory": "/var/www/html/wp-content/"
     },
-    "Volumes": [
-      {
-        "HostDirectory": "/var/www/html/wp-content/",
-        "ContainerDirectory": "/var/www/html/wp-content/"
-      }
-    ],
-    "Ports": [
-      {
-        "ContainerPort": "80"
-      }
-    ]
-  }
+    {
+      "HostDirectory": "/var/app/current/uploads.ini",
+      "ContainerDirectory": "/usr/local/etc/php/conf.d/uploads.ini"
+    }
+  ],
+  "Ports": [
+    {
+      "ContainerPort": "80"
+    }
+  ]
+}
